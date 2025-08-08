@@ -91,8 +91,8 @@ private:
         // Create trajectory points
         double duration = 10.0;  // Duration to 10 seconds
         int steps = 200;
-        double amplitude = M_PI / 6.0; // 180/6 = 30 degrees in radians
-        
+        double amplitude = M_PI / 12.0; // 180/12 = 15 degrees in radians
+
         for (int i = 0; i <= steps; ++i) {
             double t = i * duration / steps;
             double phase = (2.0 * M_PI / duration) * t;
