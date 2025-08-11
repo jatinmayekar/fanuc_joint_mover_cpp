@@ -47,7 +47,6 @@ private:
         request->index = index;
         request->value = value;
         
-        // Use async call with callback as second parameter
         set_io_client_->async_send_request(
             request,
             [this](rclcpp::Client<fanuc_msgs::srv::SetBoolIO>::SharedFuture future) {
@@ -118,7 +117,7 @@ private:
         sent_ = true;
         timer_->cancel();
         
-        // Set IO signal - same as Python
+        // Set IO signal
         set_io_signal(1, true);
     }
     
