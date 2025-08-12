@@ -11,7 +11,7 @@ C++ ROS 2 package for controlling joint movements on Fanuc robots.
 ## Installation
 ```bash
 cd ~/your_ws/src
-git clone https://github.com/yourusername/joint_mover_cpp.git
+git clone https://github.com/jatinmayekar/fanuc_joint_mover_cpp.git
 cd ..
 colcon build --packages-select joint_mover_cpp
 source install/setup.bash
